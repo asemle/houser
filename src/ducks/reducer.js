@@ -1,4 +1,3 @@
-import axios from 'axios';
 let initialState = {
     user: {},
     name: '',

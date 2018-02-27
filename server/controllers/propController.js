@@ -12,8 +12,12 @@ module.exports = {
         const userid = req.session.user.id
         
         db.get_properties([userid]).then((properties) => {
-            console.log(properties)
-            res.status(200).send([...properties]);
+            if (req.query.rent) {
+                let filtered = properties.filter((el) => Number(el.desiredrent) > Number(req.query.rent));
+                res.status(200).send([...filtered])
+            } else {
+                res.status(200).send([...properties]);
+            }
         })
     },
     delete: (req, res) => {

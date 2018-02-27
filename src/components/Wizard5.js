@@ -3,7 +3,7 @@ import Header from './Header';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Redirect } from 'react-router';
+
 
 import { reset, updateDesiredRent } from '../ducks/reducer.js';
 
@@ -11,9 +11,6 @@ class Wizard5 extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            redirect: false
-        }
 
         this.addToDatabase = this.addToDatabase.bind(this);
     }
@@ -82,7 +79,7 @@ class Wizard5 extends Component {
 
                     <div className="nextBox prevBox">
                         <Link to="/wizard/4"><button>Previous Step</button></Link>
-                        <button className="complete" onClick={() => {this.addToDatabase; this.props.history.push('/dashboard')}}>Complete</button>
+                        <button className="complete" onClick={() => {this.addToDatabase(); this.props.history.push('/dashboard')}}>Complete</button>
                     </div>
                 </div>
             </div>

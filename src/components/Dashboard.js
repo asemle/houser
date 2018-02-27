@@ -8,24 +8,37 @@ import Property from './Property.js';
 
 
 class Dashboard extends Component {
-constructor() {
-    super();
+    constructor() {
+        super();
 
-    this.state = ({
-        got: false
-    })
-}
+        this.state = {
+            desiredRent: 0
+        }
+    }
+
     componentDidMount() {
         if (!this.props.user.username) {
             this.props.history.push('/');
         }
+        this.getProperties();
+    }
+    getProperties() {
         axios.get('/api/properties')
+            .then(res => {
+                this.props.updateProperties(res.data)
+            })
+    }
+    getFiltered() {
+        axios.get(`/api/properties?rent=${this.state.desiredRent}`)
         .then(res => {
-            console.log(res.data)
-            this.props.updateProperties(res.data)
-                this.setState({
-                    got: true
-                })
+                this.props.updateProperties(res.data)
+
+            })
+    }
+
+    filterChange(x) {
+        this.setState({
+            desiredRent: x
         })
     }
     render() {
@@ -55,12 +68,12 @@ constructor() {
                 <Header/>
                 <Link to="/wizard/1"><button className="addNew">Add new property</button></Link>
 
-                {/* <div className="filterBox">
-                    <span>List properties with "desired rent" greator than: $</span>
-                    <input placeholder="0" value=""/>
-                    <button className="filterBtn"> Filter </button>
-                    <button className="resetBtn"> Reset </button>
-                </div> */}
+                <div className="filterBox">
+                    <span>List properties with "desired rent" greater than: $</span>
+                    <input onChange={(e) => this.filterChange(e.target.value)} value={this.state.desiredRent}/>
+                    <button onClick={() => this.getFiltered()} className="filterBtn"> Filter </button>
+                    <button onClick={() => this.getProperties()}className="resetBtn"> Reset </button>
+                </div>
 
                 <div className="listingBox">
                     <span> Home Listings </span>

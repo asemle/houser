@@ -20,7 +20,6 @@ class Header extends Component {
         axios.post('/api/auth/logout', {}).then(res => {
             this.props.logout();
             this.setState({ redirect: true })
-            console.log(this.props)
         })
     }
 

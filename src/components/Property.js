@@ -14,7 +14,7 @@ class Property extends Component {
 
     render() {
 
-        const { id, address, city, description, desired_rent, image, loan, monthly_mortgage, name, recommended_rent, state, zip, deleteProperty } = this.props;
+        const { id, address, city, description, desired_rent, image, loan, monthly_mortgage, name, recommended_rent, state, zip} = this.props;
         return (
             <div className="propertyBox">
                 <div className="imageBox">
