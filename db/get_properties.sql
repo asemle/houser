@@ -1,0 +1,2 @@
+SELECT * FROM PROPERTY
+-- WHERE userid = $1

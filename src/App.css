@@ -1,0 +1,565 @@
+    body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #afd4c0;
+    min-height: 800px;
+}
+
+#root {
+    width: 100%;
+    min-height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/* HEADER */
+
+header {
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #519872;
+    cursor: default !important;
+}
+
+.headerInner {
+    box-sizing: border-box;
+    display: flex;
+    width: 50%;
+    min-width: 759px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    min-width: 759px;
+}
+
+.leftHeader {
+    display: inline-block;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.houser {
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.dash {
+    margin-left: 10px;
+}
+
+.rightHeader {
+    display: inline-block;
+}
+
+.logout {
+    font-weight: 700;
+}
+
+
+/* AUTH PAGE */
+
+.login {
+    width: 50%;
+    height: 100vh;
+    min-height: 850px;
+    min-width: 850px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.login img {
+    margin-bottom: 50px;
+}
+
+.loginHeader {
+    font-size: 20px;
+    margin-bottom: 3px;
+    position: relative;
+    left: -27%;
+    font-weight: 700;
+}
+
+.loginInput {
+    font-size: 25px;
+    width: 70%;
+    margin-bottom: 25px;
+    border: 1px solid #519872;
+    outline: none;
+    /* background-color: rgb(250, 255, 189); */
+}
+
+.loginBtn {
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #8aea92;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.regBtn {
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #3b5249;
+    color: #FFF;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    width: 50%;
+    min-height: 900px;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 75px;
+    background-image: linear-gradient(180deg, #e2f3ea, #fff);
+    padding: 20px;
+    min-width: 759px
+}
+
+.addNew {
+    border: none;
+    font-size: 21px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: #8aea92;
+    font-weight: 700;
+}
+
+.filterBox {
+    width: 100%;
+    height: 80px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.filterBox span {
+    font-size: 20px;
+}
+
+.filterBox input {
+    width: 85px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 1px solid #519872;
+    outline: none;
+}
+
+.filterBtn {
+    border: none;
+    padding: 7px;
+    width: 70px;
+    cursor: pointer;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: #8aea92;
+}
+
+.resetBtn {
+    color: #fff;
+    margin-left: 10px;
+    border: none;
+    padding: 7px;
+    width: 70px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #3b5249;
+}
+
+.listingBox {
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.listingBox span {
+    font-weight: 700;
+}
+
+.listings {
+    width: 100%;
+    height: 74%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/* WIZARD */
+
+.wizardHeader {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.wizardHeader span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.wizardHeader button {
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #fec2c2;
+    border: none;
+    font-family: "Open sans", sans-serif;
+}
+
+.wizNav {
+    width: 70%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.wizNav h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.circleBox {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.circle {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color: #B8D8C7;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.active {
+    box-sizing: border-box;
+    border: 0.4em solid #B8D8C7;
+    background-color: #519872;
+}
+
+.wizWrap {
+    width: 100%;
+    height: 500px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.propTitle {
+    width: 70%;
+    margin-bottom: 3px;
+}
+
+.propTitle span {
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+.propInput {
+    border-radius: 2px;
+    font-size: 15px;
+    width: 70%;
+    border: 1px solid #519872;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.propText {
+    border-radius: 2px;
+    font-size: 15px;
+    width: 70%;
+    height: 100px;
+    resize: none;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    border: 1px solid #519872;
+    outline: none;
+}
+
+.propDescr {
+    margin-top: 15px;
+}
+
+.nextBox {
+    margin-top: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.nextBox button {
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: #3b5249;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+.wiz2 .propTitle {
+    margin-bottom: 0px;
+}
+
+.addressMiddle {
+    width: 70%;
+    margin-top: 20px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.middleHalf {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+}
+
+.nextBox.prevBox {
+    justify-content: space-between;
+}
+
+.imagePreview {
+    width: 70%;
+    height: 300px;
+    border-radius: 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: rgba(0, 0, 0, .2);
+    margin-bottom: 20px;
+    background-color: #dedede;
+    border: 1px solid #519872;
+    outline: none;
+    font-weight: 700;
+}
+
+.imagePreview img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.propTitle.mortgage {
+    margin-top: 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.propTitle.rent {
+    margin-top: 30px;
+}
+
+.reco {
+    font-weight: 700;
+}
+
+.nextBox .complete {
+    font-family: "Open sans", sans-serif;
+    background-color: #8aea92;
+    font-weight: 400;
+    color: black;
+    font-size: 15px;
+}
+
+.propertyBox {
+    width: 100%;
+    height: 74%;
+    border: none;
+    height: 150px;
+    width: 98%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    background-color: #dedede;
+    font-size: 16px;
+}
+
+.imageBox {
+    height: 100%;
+    width: 150px;
+    overflow: hidden;
+}
+
+.imageBox img {
+
+    height: 100%;
+}
+
+.propProps {
+    width: calc(100% - 150px);
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.descriptionWrap {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+}
+
+.description {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.descName {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+}
+
+.descdesc {
+    font-family: Open Sans, sans-serif;
+    font-weight: 400!important;
+}
+
+.detailWrap {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    padding-left: 0;
+    position: relative;
+}
+
+.details {
+    width: 97%;
+    padding-right: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+    border-left: 1px solid #000;
+    padding-left: 10px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.details span {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+}
+
+.delete {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        color: grey;
+        line-height: 9px;
+}
